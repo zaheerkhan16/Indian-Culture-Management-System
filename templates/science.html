@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides</title>
+    <style>
+
+section#slides_parent {
+    padding-bottom: 150px;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+}
+
+.slides h4 {
+    color: #444;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.slide_1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    min-width: 60px;
+    height: 300px;
+    border-radius: 40px;
+    margin: 0 15px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.slide_1:hover {
+    min-width: 250px;
+}
+
+.slide_1:hover .slide_info {
+    transform: rotate(0deg);
+    left: 20px;
+    bottom: 20px;
+    font-size: 22px;
+}
+
+.slide_2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i2.jpg);
+}
+
+.slide_3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i3.jpg);
+}
+
+.slide_4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i4.jpg);
+}
+
+.slide_5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i5.jpg);
+}
+
+.slide_6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i6.jpg);
+}
+
+.slide_7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/recipe_slides/i7.jpg);
+}
+
+.slide_info {
+    position: absolute;
+    bottom: 51px;
+    color: #ffff;
+    transform: rotate(-90deg);
+    right: 0px;
+    font-weight: 700;
+    font-size: 12px;
+}
+    </style>
+</head>
+<body>
+    <div class="slides">
+        <div class="slide_1" style="background-image: url('modhera_sun_temple.jpg');">
+            <div class="slide_info">
+                <p>Modhera Sun Temple</p>
+            </div>
+        </div>
+        <div class="slide_1 slide_2" style="background-image: url('adi_annamalai_temple.jpg');">
+            <div class="slide_info">
+                <p>Adi Annamalai Temple</p>
+            </div>
+        </div>
+        <div class="slide_1 slide_3" style="background-image: url('western_ghats.jpg');">
+            <div class="slide_info">
+                <p>Western Ghats</p>
+            </div>
+        </div>
+        <div class="slide_1 slide_4" style="background-image: url('red_fort.jpg');">
+            <div class="slide_info">
+                <p>Red Fort</p>
+            </div>
+        </div>
+        <div class="slide_1 slide_5" style="background-image: url('chhatrapati_shivaji_terminus.jpg');">
+            <div class="slide_info">
+                <p>Chhatrapati Shivaji Terminus</p>
+            </div>
+        </div>
+        <div class="slide_1 slide_6" style="background-image: url('bandipur_national_park.jpg');">
+            <div class="slide_info">
+                <p>Bandipur National Park</p>
+            </div>
+        </div>
+        <div class="slide_1 slide_7" style="background-image: url('ganga_aarti.jpg');">
+            <div class="slide_info">
+                <p>Ganga Aarti</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INDIAN CULTURE MANAGEMENT SYSTEM</title>
+</head>
+<body align="center">
+
+<h2 align="center" style="font-size: 50px; color: white;">Indian Culture Management System</h2>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cultural Management System</title>
+    <style>
+        body {
+        background-image: url('/static/img/k.jpg');
+        background-size: cover;
+
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7); /* Adjust the transparency as needed */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            width: 80%;
+            margin: 100px;
+            text-align: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 100px;
+}
+        }
+        .container h2 {
+            color: #333;
+        }
+        .container p {
+            color: #666;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7); /* Adjust the transparency as needed */
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="{% url 'about' %}">About</a>&nbsp;&nbsp;&nbsp;
+        <a href="{% url 'contact' %}">Contact Us</a>&nbsp;&nbsp;&nbsp;
+        <a href="{% url 'Login' %}">Login</a>&nbsp;&nbsp;&nbsp;
+    </nav>
+
+
+    <div class="container">
+        <h2>Welcome to the Indian Cultural Management System</h2>
+        <p>Explore the rich and diverse cultural heritage of India with our comprehensive management system.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Indian Cultural Management System</p>
+    </footer>
+</body>
+
+
+
+
+
+</body>
+</html>

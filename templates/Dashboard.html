@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Indian Culture Website</title>
+</head>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+        filter: blur(-30px);
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+    background-color: #555;
+    overflow: hidden;
+    display: flex; /* Align items in a single line */
+    justify-content: space-between; /* Distribute items evenly along the line */
+    align-items: center; /* Center items vertically */
+  }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    section {
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center the content in the section */
+    }
+
+
+    #history {
+      background-color: #6495ed; /* Cornflower Blue */
+    }
+
+ select {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Add some spacing between links and dropdown menu */
+  }
+
+    #art {
+      background-color: green; /* Cornflower Blue */
+    }
+    #music {
+      background-color: yellow; /* Cornflower Blue */
+    }
+
+    #dance {
+      background-color: pink; /* Cornflower Blue */
+    }
+    #festivals {
+      background-color: brown; /* Cornflower Blue */
+    }
+    #food {
+      background-color: navy blue; /* Cornflower Blue */
+    }
+  #clothing {
+      background-color: orange; /* Cornflower Blue */
+    }
+    #language {
+      background-color: brown; /* Cornflower Blue */
+    }
+
+
+
+    img {
+      max-width: 25%; /* Changed image width to 25% */
+      height: auto;
+      border-radius: 8px;
+      margin-top: 15px; /* Add some spacing above the image */
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the image */
+      transition: max-width 0.5s ease-in-out;
+    }
+
+    img:hover {
+  transition: max-width 0.5s ease-in-out; /* Add a smooth transition to the image expansion */
+  max-width: 35%; /* Expand image to 35% instead of 100% */
+}
+
+footer {
+  border-top: 1px solid #ccc;
+   margin: 20px 0;
+}
+ footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+
+.footer-1 h2 {
+    color: #138808;
+    font-size: 30px;
+}
+
+.fot-info h3 {
+    color: #333;
+    font-size: 25px;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.fot-info ul {
+    list-style: none;
+}
+
+.fot-info ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0px;
+    display: inline-block;
+    transition: all 0.6s ease;
+}
+
+.fot-info ul li a:hover {
+    padding-left: 5px;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #ff7708;
+    color: #fff;
+    padding: 14px 0px;
+    margin: 50px 0px 0px 0px;
+}
+
+.footer-par {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px 0px;
+}
+  </style>
+<body>
+
+  <header>
+    <h1>Indian Culture</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#history">History</a>
+    <a href="#art">Art</a>
+    <a href="#music">Music</a>
+    <a href="#dance">Dance</a>
+    <a href="#festivals">Festivals</a>
+    <a href="#food">Food</a>
+    <a href="#clothing">Clothing</a>
+    <a href="#languages">Languages</a>
+    <select onchange="window.location.href=this.value">
+      <option value="#" selected disabled>Select</option>
+      <option value="capitals">Top Cities</option>
+      <option value="blog">Blogs</option>
+      <option value="contact">Contact Us</option>
+      <option value="map">Map</option>
+      <option value="science">science</option>
+    </select>
+      <div class="d-flex">
+                        <a href="{% url 'Logout' %}" name = 'Logout'>
+                            <button class="btn btn-outline-primary ms-3">Logout</button>
+                        </a>
+                    </div>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to our Indian Culture Website!</h2>
+    <p>Explore the rich and diverse cultural heritage of India.</p>
+
+    <a href="https://en.wikipedia.org/wiki/Culture_of_India" class="btn">Learn More</a>
+  </section>
+
+  <section id="history">
+    <h2>History</h2>
+    <p>Discover the ancient history and heritage of India.</p>
+<a href="https://en.wikipedia.org/wiki/History_of_India">
+  <img src="/static/img/history.jpg" alt="History Image">
+</a>
+
+
+  </section>
+  <section id="art">
+    <h2>Art</h2>
+    <p>Discover the ancient history and heritage of India.</p>
+
+    <a href="https://en.wikipedia.org/wiki/Indian_art#:~:text=Indian%20art%20consists%20of%20a,and%20at%20times%20eastern%20Afghanistan."><img src="/static/img/art.jpg" alt="History Image"></a>
+  </section>
+
+  <section id="music">
+    <h2>music</h2>
+    <p>Discover the ancient history and heritage of India.</p>
+    <p>Five Types of Musical Instruments. There are five different categories of instruments: percussion, woodwind, string, brass, and keyboard. The categories are based on their sounds, characteristics, and how the sounds are produced. This method of classification is called the Hornbostel-Sachs or Sachs-Hornbostel system.</p>
+
+   <a herf="https://en.wikipedia.org/wiki/Music_of_India#:~:text=The%20two%20main%20traditions%20of,northern%2C%20eastern%20and%20central%20regions."> <img src="/static/img/music.jpg" alt="History Image"></a>
+  </section>
+
+
+  <section id="dance">
+    <h2>dance</h2>
+    <p>Discover the ancient history and heritage of India.</p>
+    <p>A musical instrument is a gadget that makes melodic sounds. On a basic level, we can see an article that produces a sound like an instrument—it is through reason that the item turns into an instrument. The historical backdrop of instruments dates to the beginning of human culture.</p>
+
+   <a herf="https://en.wikipedia.org/wiki/Dance_in_India"> <img src="/static/img/dances.jpg" alt="History Image"></a>
+    <br>
+    <br>
+		<button onclick="window.location.href='{% url 'classical' %}'">Learn More</button>&nbsp;&nbsp;&nbsp;
+
+  </section>
+
+
+  <section id="festivals">
+    <h2>festivals</h2>
+    <p>Discover the ancient history and heritage of India.</p>
+    <p>The religious festivals are one of the most famous festivals not only throughout India but over the world. Some of the most prominent religious festivals are Diwali, Eid-Ul-Fitr, Christmas, Guru Nanak Jayanti, Holi and many more. Diwali and Holi are the most prominent festivals of the Hindu religion.</p>
+
+   <a herf="https://en.wikipedia.org/wiki/List_of_festivals_in_India"> <img src="/static/img/festivals.png" alt="History Image"></a>
+    <br>
+    <br>
+    		<button onclick="window.location.href='{% url 'festivals' %}'">Learn More</button>&nbsp;&nbsp;&nbsp;
+
+  </section>
+
+  <section id="food">
+    <h2>food</h2>
+    <p>Discover the ancient history and heritage of India.</p>
+    <p>Staple foods of Indian cuisine include pearl millet (bājra), rice, whole-wheat flour (aṭṭa), and a variety of lentils, such as masoor (most often red lentils), tuer (pigeon peas), urad (black gram), and moong (mung beans). Lentils may be used whole, dehusked—for example, dhuli moong or dhuli urad—or split.</p>
+
+    <a herf="https://en.wikipedia.org/wiki/Indian_cuisine#:~:text=Many%20types%20of%20meat%20are,staple%20ingredient%20in%20Indian%20cuisine."><img src="/static/img/food1.jpg" alt="History Image"></a>
+  </section>
+
+  <section id="clothing">
+    <h2>clothing</h2>
+    <p>Discover the ancient history and heritage of India.</p>
+    <p>Clothing in India varies with the different ethnicities, geography, climate, and cultural traditions of the people of each region of India. Historically, clothing has evolved from simple garments like kaupina, langota, achkan, lungi, sari, to rituals and dance performances.</p>
+
+   <a herf="https://en.wikipedia.org/wiki/Clothing_in_India"> <img src="/static/img/dress.jpg" alt="History Image"></a>
+  </section>
+
+
+  <section id="languages">
+    <h2>languages</h2>
+    <p>Discover the ancient history and heritage of India.</p>
+    <p>Of the hundreds of languages spoken in India, 22 are mentioned in the constitution of India: Assamese, Bengali (Bangla), Dogri, Gujarati, Hindi, Kashmiri, Konkani, Maithili, Marathi, Nepali, Oriya, Punjabi, Sanskrit, Sindhi, and Urdu all belong to the Indo-Aryan group of the Indo-Iranian branch of Indo-European.</p>
+
+  <a herf="https://en.wikipedia.org/wiki/Languages_of_India">    <img src="/static/img/languages.jpg" alt="History Image"></a>
+  </section>
+
+        <div class="container">
+            <div class="footer-par">
+                <div class="footer-1">
+                    <h2>Travel with us</h2>
+                </div>
+                <div class="footer-2 fot-info">
+                    <h3>Dekho Apna Desh!</h3>
+                    <ul>
+                        <li><a href="https://indianculture.gov.in/">Indian Culture</a></li>
+                        <li><a href="https://www.incredibleindia.org/content/incredible-india-v2/en.html">Incredible!ndia</a></li>
+                        <li><a href="http://www.indiaculture.nic.in/hi">Ministry of Culture</a></li>
+                        <li><a href="https://swachhbharatmission.gov.in/SBMCMS/index.htm">Swachh Bharat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-3 fot-info">
+                    <h3>Visit For More</h3>
+                    <ul>
+                        <li><a href="https://www.mygov.in/">My Goverment</a></li>
+                        <li><a href="https://www.digitalindia.gov.in/">Digital India</a></li>
+                        <li><a href="https://tourism.gov.in/">Ministry of Tourism</a></li>
+                    </ul>
+                </div>
+                <div class="footer-4 fot-info">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="https://github.com/akankshadhar2">Zaheerkhan</a></li>
+                        <li><a href="https://github.com/coder024">Chaitnya</a></li>
+                        <li><a href="https://github.com/Mitali-13"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Developed by the icms Team</p>
+    </footer>
+
+
+
+
+
+
+</body>
+</html>

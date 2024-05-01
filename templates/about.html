@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INDIAN CULTURE MANAGEMENT SYSTEM - About Us</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('/static/img/OLO2EG0.jpg'); /* Set the background image path */
+        background-size: cover;
+    }
+
+    .container {
+        width: 80%;
+        margin: 100px auto;
+        text-align: center;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 100px;
+    }
+
+    .container h2 {
+        color: #333;
+    }
+
+    .container p {
+        color: #666;
+    }
+    </style>
+</head>
+<br>
+<br>
+<body>
+    <nav align="center">
+        <button onclick="window.location.href='{% url 'index' %}'">Index</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="window.location.href='{% url 'contact' %}'">Contact Us</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="window.location.href='{% url 'Login' %}'">Login</button>&nbsp;&nbsp;&nbsp;
+    </nav>
+
+
+    <div class="container">
+        <h2>About the Indian Culture Management System</h2>
+        <p>The Indian Culture Management System (ICMS) is a comprehensive system for managing the rich and diverse cultural heritage of India. The ICMS provides a platform for users to explore, learn about, and contribute to the preservation of Indian culture.</p>
+        <p>The ICMS includes a variety of features, such as:</p>
+        <ul>
+            <li>A searchable database of Indian cultural artifacts, including paintings, sculptures, music, literature, and more.</li>
+            <li>A variety of educational resources, such as articles, videos, and interactive exhibits.</li>
+            <li>Tools for users to create and share their own contributions to Indian culture, such as blog posts, photo albums, and video galleries.</li>
+        </ul>
+        <p>The ICMS is a valuable resource for anyone interested in learning more about Indian culture, or who wants to contribute to the preservation of this important heritage.</p>
+    </div>
+</body>
+</html>
